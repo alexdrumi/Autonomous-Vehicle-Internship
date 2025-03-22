@@ -1,96 +1,156 @@
-# AUTONOMOUS-VEHICLE-INTERNSHIP #
+<!-- PROJECT TITLE & LOGO (Optional) -->
+<!-- <div align="center">
+  <img src="assets/logo.png" alt="Logo" width="80" height="80" />
+</div> -->
 
-## Introduction ##
+<h1 align="center">AUTONOMOUS-VEHICLE-INTERNSHIP</h1>
 
-TELEANN is proud to introduce its Autonomous Forklift, a solution that is designed to revolutionize the warehouse environment. This cutting-edge product aims to completely automate the task of moving items between various points within a warehouse setting, thereby enhancing efficiency, reducing costs, and minimizing human error.
+<!-- TABLE OF CONTENTS -->
+<details open>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#core-objective">Core Objective</a></li>
+    <li><a href="#target-market">Target Market</a></li>
+    <li><a href="#key-features">Key Features</a></li>
+    <li><a href="#technology-stack-overview">Technology Stack Overview</a></li>
+      <ul>
+        <li><a href="#operating-system">Operating System</a></li>
+        <li><a href="#robotics-framework">Robotics Framework</a></li>
+        <li><a href="#libraries--frameworks">Libraries & Frameworks</a></li>
+        <li><a href="#hardware-platforms">Hardware Platforms</a></li>
+      </ul>
+    <li><a href="#demonstration-and-media">Demonstration and Media</a></li>
+    <li><a href="#repository-structure">Repository Structure</a></li>
+    <li><a href="#disclaimer">Disclaimer</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-### Core objective ###
+---
 
-The core objective of the product is to eliminate the mundane and often labor-intensive job of manually transporting items from one location to another. By automating this critical function we could focus more on workflow efficiency and more human-oriented tasks while reducing operational costs.
+## Introduction
 
-### Target Market ###
+**TELEANN** proudly introduces its **Autonomous Forklift**—a cutting-edge solution designed to revolutionize the warehouse environment by automating the movement of items between various points. This system enhances efficiency, reduces costs, and minimizes human error.
 
-Our Autonomous Forklift is aimed at medium to large-scale warehouses, distribution centers, and manufacturing facilities that are looking to automate their internal logistics and improve operational efficiencies.
+In the context of this internship project, our focus is on **real-time object detection and navigation** using **ROS** (Robot Operating System). The internship involves integrating **software, hardware, and AI** components to create a robust autonomous forklift prototype.
 
-### Features ###
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-- _Autonomous Navigation_
+---
 
-    Leveraging state-of-the-art robotics and AI algorithms, our Autonomous Forklift is capable of navigating complex warehouse terrains without human intervention.
+## Core Objective
 
-- _Load Handling_
+Our goal is to **eliminate the mundane and labor-intensive task** of manually transporting items in a warehouse. By automating this function, we can optimize workflow efficiency and shift human labor toward higher-level tasks, reducing operational costs in the process.
 
-    Designed to match the capacity and functionality of a traditional forklift,  our product can lift and transport a wide range of items, from small parcels to heavy industrial equipment.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-- _Safety_
+---
 
-    Equipped with an array of sensors and safety mechanisms, the Autonomous Forklift is designed to work seamlessly alongside human operators, ensuring a safe and accident-free environment.
+## Target Market
 
-- _Integration_
+This autonomous forklift targets **medium to large-scale warehouses**, distribution centers, and manufacturing facilities seeking to automate **internal logistics** and bolster operational efficiency.
 
-    Our forklift can be integrated with existing Warehouse Management Systems (WMS) to provide real-time updates on inventory movement, thereby optimizing stock management.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-- _Energy Efficient_
+---
 
-    Built with sustainability in mind, our forklift uses energy-efficient motors and offers an eco-friendly alternative to traditional, fossil fuel-powered forklifts.
+## Key Features
 
-* * *
+1. **Autonomous Navigation**  
+   Utilizes advanced robotics and AI algorithms to move through complex warehouse terrains.
 
-## TECHNOLOGY STACK OVERVIEW ##
+2. **Load Handling**  
+   Matches the capacity of a traditional forklift; capable of lifting and transporting items ranging from small parcels to heavy industrial equipment.
 
-### Operating system ###
+3. **Safety**  
+   Multiple sensors and safety mechanisms ensure safe interaction alongside human operators.
 
-- Name: Ubuntu 20.04 LTS
-- Website: [link](https://releases.ubuntu.com/20.04.6/)
-- Description: Ubuntu 20.04 LTS (Long-Term Support) is the chosen operating system for our startup. It provides a stable and well-supported environment for our robotics and AI applications.
-- For the Jetson AGX Orin system we use Jetson Linux which is based on ubuntu 20.04 LTS. For more information see [here](https://developer.nvidia.com/embedded/jetson-linux)
-- Kernel: 5.10
+4. **Integration**  
+   Seamless connectivity with existing Warehouse Management Systems (WMS) for real-time inventory movement updates.
 
-### Robotics framework/middleware ###
+5. **Energy Efficiency**  
+   Designed with sustainability in mind, featuring energy-efficient motors and an eco-friendly approach.
 
-- Name: ROS1 Noetic
-- Website: [link](http://wiki.ros.org/noetic)
-- Description:
-    ROS1 Noetic is a powerful middleware designed for building   robotics applications. It enables us to efficiently develop, simulate, and deploy complex robotic systems.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Libraries/Frameworks ###
+---
 
-- ORB SLAM3
-  - Github Repository: [link](https://github.com/thien94/orb_slam3_ros)
-  - Description:
-      ORB_SLAM3 (Oriented FAST and Rotated BRIEF Simultaneous Localization and Mapping) is a cutting-edge SLAM algorithm that we're using for real-time mapping and localization. It leverages oriented FAST keypoints and rotated BRIEF descriptors for accurate tracking and mapping. This version is a fork for a ros implementation of the algorithm.
+## Technology Stack Overview
 
-- Anybotics
-  - Github Repository: [link](https://github.com/ANYbotics)
-  - Description:
-    ANYbotics is a repository that we use for multiple purposes. Used packages are grid_map and elevation_mapping.
+### Operating System
+- **Ubuntu 20.04 LTS**  
+  - Provides a stable foundation for robotics and AI applications.  
+  - For **Jetson AGX Orin**, we use **Jetson Linux** (based on Ubuntu 20.04 LTS).  
+  - **Kernel**: 5.10  
 
-- Camera Calibration
-  - Website: [link](http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration)
-  - Trello: [link](https://trello.com/c/bcNHNTJ2/97-configure-webcam-see-steps-in-the-description)
-  - Description:
-    This is used to calibrate the camera and make a config file that ORB_SLAM3 uses. On the Trello page there is more step-by-step information, although it is made for the CoolerMaster (server-desktop).
+### Robotics Framework
+- **ROS1 Noetic**  
+  - A powerful middleware for building robotics applications.  
+  - Enables efficient development, simulation, and deployment of complex robotic systems.
 
-- IMU Calibration
-  - Website: [link1](htps://github.com/ori-drs/allan_variance_ros) and [link2](https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model)
-  - Description:
-    This is used to calibrate the imu sensor for the camera and should be in the config file that ORB_SLAM3 (Inertial) uses. It uses a rosbag file of the imu sensor data of mininumum length of 3 hours (intel suggests 15-24 hours). This sensor data should be from an imu sensor that is fully at rest and on a dampened foam.
+### Libraries & Frameworks
 
-### Hardware Platforms ###
+1. **ORB SLAM3**  
+   - [GitHub Repository](#)  
+   - Real-time **Simultaneous Localization and Mapping (SLAM)** algorithm using oriented FAST keypoints and rotated BRIEF descriptors.  
+   - We employ a ROS implementation fork for specialized usage.
 
-- PiRacer
-  - Product Page: [link](https://www.waveshare.com/piracer-ai-kit.htm)
-  - Description: We are currently using the PiRacer robotics kit for our AI-based applications. The PiRacer kit provides a foundation for our robotics projects, and we plan to transition to using the car with Jetson AGX Orin instead of the RaspberryPi platform as we continue to develop our startup's technology.
+2. **Anybotics**  
+   - [GitHub Repository](#)  
+   - Contains packages like **grid_map** and **elevation_mapping** which we leverage for mapping and environmental understanding.
 
-- Jetson AGX Orin
-  - Product Page: [link](https://developer.nvidia.com/embedded/learn/get-started-jetson-agx-orin-devkit)
-  - Description:
-    The Jetson AGX Orin developer kit is a small AI computer for makers, learners, and developers. It can work on more resource-intensive tasks than the Raspberry Pi or Nvidia Jetson Nano.
+3. **Camera Calibration**  
+   - [Website](#), [Trello](#)  
+   - Calibrates the camera and generates configuration files needed by ORB_SLAM3. More details are on our internal Trello board.
 
-- Intel Realsense D435i
-  - Product Page: [link](https://www.intelrealsense.com/depth-camera-d435i/)
-  - Description:
-    This is the camera that we are using to run the orb_slam3 algorithm on. We also use the pointcloud data it generates for object detection.
+4. **IMU Calibration**  
+   - [Reference 1](#), [Reference 2](#)  
+   - Calibrates the IMU sensor data for ORB_SLAM3 (Inertial). Requires a ROS bag file of IMU sensor data recorded for several hours while the sensor remains at rest.
 
-* * *
+### Hardware Platforms
+1. **PiRacer**  
+   - [Product Page](#)  
+   - A robotics kit used for initial AI-based experiments. Our plan is to move from a Raspberry Pi platform to the **Jetson AGX Orin**.
 
+2. **Jetson AGX Orin**  
+   - [Product Page](#)  
+   - Compact AI computer enabling more resource-intensive tasks than smaller boards like Raspberry Pi or Jetson Nano.
+
+3. **Intel Realsense D435i**  
+   - [Product Page](#)  
+   - The primary camera for running ORB_SLAM3, with additional **point cloud** data for object detection.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+---
+
+## Demonstration and Media
+
+We keep all demonstration materials—images, GIFs, and videos—in the **`assets/`** folder.
+
+1. **ROS Environment & Outside View**  
+   ![ROS/Outside View](assets/ros_outside_view.png)  
+   *A screenshot showing real-time object detection in ROS (rviz) plus an external camera feed.*
+
+2. **Video Demo (45 seconds)**  
+   [![Autonomous Forklift Demo](assets/forklift_demo_thumbnail.png)](assets/forklift_demo.mp4)  
+   - **Sound**: Commentary on forklift’s real-time object detection.  
+   - **Split-screen**: Top/left is ROS view; bottom/right is the forklift moving in a warehouse setting.  
+   - **Delay Notice**: The visible lag is strictly a **display refresh** artifact, not a ROS system delay.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+---
+
+## Repository Structure
+
+```plaintext
+.
+├── assets
+│   ├── forklift_demo_thumbnail.png
+│   ├── forklift_demo.mp4
+│   ├── ros_outside_view.png
+│   └── ... other images/GIFs
+├── README.md
+└── ... (other private or internal code not shared publicly)
