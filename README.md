@@ -1,31 +1,12 @@
-<!-- PROJECT TITLE & LOGO (Optional) -->
-<!-- <div align="center">
-  <img src="assets/logo.png" alt="Logo" width="80" height="80" />
-</div> -->
+<a id="readme-top"></a>
 
+<br />
+<div align="center">
+  <a href="https://github.com/alexdrumi/Autonomous-Vehicle-Internship">
+    <img src="assets/mne_eeg.jpg" alt="MNE EEG Logo" width="550" height="300">
+  </a>
 <h1 align="center">AUTONOMOUS-VEHICLE-INTERNSHIP</h1>
 
-<!-- TABLE OF CONTENTS -->
-<details open>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#core-objective">Core Objective</a></li>
-    <li><a href="#target-market">Target Market</a></li>
-    <li><a href="#key-features">Key Features</a></li>
-    <li><a href="#technology-stack-overview">Technology Stack Overview</a></li>
-      <ul>
-        <li><a href="#operating-system">Operating System</a></li>
-        <li><a href="#robotics-framework">Robotics Framework</a></li>
-        <li><a href="#libraries--frameworks">Libraries & Frameworks</a></li>
-        <li><a href="#hardware-platforms">Hardware Platforms</a></li>
-      </ul>
-    <li><a href="#demonstration-and-media">Demonstration and Media</a></li>
-    <li><a href="#repository-structure">Repository Structure</a></li>
-    <li><a href="#disclaimer">Disclaimer</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
 
 ---
 
@@ -33,7 +14,7 @@
 
 **TELEANN** proudly introduces its **Autonomous Forklift**—a cutting-edge solution designed to revolutionize the warehouse environment by automating the movement of items between various points. This system enhances efficiency, reduces costs, and minimizes human error.
 
-In the context of this internship project, our focus is on **real-time object detection and navigation** using **ROS** (Robot Operating System). The internship involves integrating **software, hardware, and AI** components to create a robust autonomous forklift prototype.
+In the context of this internship project, our focus is on **real-time object detection and navigation** using **ROS** (Robot Operating System). The internship involves integrating **software, hardware, and AI** components to create a robust autonomous forklift prototype. **Notably, TELEANN has recently raised over €200,000 to continue developing this solution using the same core software stack.**
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -82,7 +63,7 @@ This autonomous forklift targets **medium to large-scale warehouses**, distribut
 - **Ubuntu 20.04 LTS**  
   - Provides a stable foundation for robotics and AI applications.  
   - For **Jetson AGX Orin**, we use **Jetson Linux** (based on Ubuntu 20.04 LTS).  
-  - **Kernel**: 5.10  
+  - **Kernel**: 5.10
 
 ### Robotics Framework
 - **ROS1 Noetic**  
@@ -139,6 +120,10 @@ We keep all demonstration materials—images, GIFs, and videos—in the **`asset
    - **Split-screen**: Top/left is ROS view; bottom/right is the forklift moving in a warehouse setting.  
    - **Delay Notice**: The visible lag is strictly a **display refresh** artifact, not a ROS system delay.
 
+3. **Additional Clip**  
+   [![Extra Demo](assets/forklift_demo2_thumbnail.png)](assets/forklift_demo2.mp4)  
+   - *Another short demo focusing on obstacle avoidance and object recognition.*
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
@@ -148,8 +133,10 @@ We keep all demonstration materials—images, GIFs, and videos—in the **`asset
 ```plaintext
 .
 ├── assets
-│   ├── forklift_demo_thumbnail.png
 │   ├── forklift_demo.mp4
+│   ├── forklift_demo_thumbnail.png
+│   ├── forklift_demo2.mp4
+│   ├── forklift_demo2_thumbnail.png
 │   ├── ros_outside_view.png
 │   └── ... other images/GIFs
 ├── README.md
