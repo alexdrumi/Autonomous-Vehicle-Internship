@@ -48,14 +48,11 @@ We keep all demonstration materials—images, GIFs, and videos—in the **`asset
    *A screenshot showing real-time object detection in ROS (rviz) plus an external camera feed.*
 
 2. **Video Demo (45 seconds)**  
-   [![Autonomous Forklift Demo](assets/forklift_demo_thumbnail.png)](assets/forklift_demo.mp4)  
+   [![Autonomous Forklift Demo](assets/Teleann_demo_compressed.mp4)](assets/forklift_demo.mp4)  
    - **Sound**: Commentary on forklift’s real-time object detection.  
    - **Split-screen**: Top/left is ROS view; bottom/right is the forklift moving in a warehouse setting.  
    - **Delay Notice**: The visible lag is strictly a **display refresh** artifact, not a ROS system delay.
 
-3. **Additional Clip**  
-   [![Extra Demo](assets/forklift_demo2_thumbnail.png)](assets/forklift_demo2.mp4)  
-   - *Another short demo focusing on obstacle avoidance and object recognition.*
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
