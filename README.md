@@ -14,7 +14,19 @@
 
 **TELEANN** works on an **Autonomous Forklift** — a cutting-edge solution designed to revolutionize the warehouse environment by automating the movement of items between various points. This system enhances efficiency, reduces costs, and minimizes human error. The forklifts are retrofitted with our hardware and software kit, making it compatible with all types of existing forklifts.
 
-In the context of this internship project, my focus was on **real-time object detection and navigation** using **ROS** (Robot Operating System). The internship involves integrating **software, hardware, and AI** components to create a robust autonomous forklift prototype. **Notably, TELEANN has recently raised over €200,000 to continue developing this solution using the same core software stack.**
+In the context of this internship project, my focus was on **real-time object detection and navigation** using **ROS** (Robot Operating System). The internship involves integrating **software, hardware, and AI** components to create a robust autonomous forklift prototype.<br>
+
+## My key contributions included:<br>
+
+**Modifying Library Wrappers**: I customized and extended wrappers around key robotics libraries, ensuring seamless integration with our system requirements.<br><br>
+**Ensuring Seamless Communication**: By standardizing data exchange between C++ and Python processes, I enabled secure, real-time communication across various modules.<br><br>
+**Developing Motor Control Interfaces**: I designed and implemented a specialized control component (akin to a “PCI controller”) for the PiRacer platform, handling steering, speed regulation, and sensor feedback based on real-time 3D data from ROS.<br><br>
+
+
+
+
+
+For the software developement we used C++ and python extensively as they are the main language in which ROS operates. **Notably, TELEANN has recently raised over €200,000 to continue developing this solution using the same core software stack. At the end of the internship, I was offered a full-time contract.** 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -41,14 +53,14 @@ Designed for medium- to large-scale warehouses, distribution centers, and manufa
 
 ## Demonstration and Media
 
-We keep all demonstration materials—images, GIFs, and videos—in the **`assets/`** folder.
+Demonstration materials—images, GIFs are found in the **`assets/`** folder.
 
-1. **ROS Environment & Outside View**  
-   ![ROS/Outside View](assets/ros_outside_view.png)  
-   *A screenshot showing real-time object detection in ROS (rviz) plus an external camera feed.*
+1. **Our Autonomous vehicle featured on vorsten.nl with Queen Maxima.**  
+   ![Autonomous Vehicle Photo](assets/teleann_robot.jpg)  
+   *A screenshot showing the autonomous vehicle on the fifth anniversary of Codam Coding College.*
 
 2. **Video Demo (45 seconds)**  
-   [![Autonomous Forklift Demo](assets/Teleann_demo_compressed.mp4)](assets/forklift_demo.mp4)  
+   [![Autonomous Forklift Demo](assets/Teleann_demo_compressed.gif)]
    - **Sound**: Commentary on forklift’s real-time object detection.  
    - **Split-screen**: Top/left is ROS view; bottom/right is the forklift moving in a warehouse setting.  
    - **Delay Notice**: The visible lag is strictly a **display refresh** artifact, not a ROS system delay.
@@ -57,17 +69,3 @@ We keep all demonstration materials—images, GIFs, and videos—in the **`asset
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
-
-## Repository Structure
-
-```plaintext
-.
-├── assets
-│   ├── forklift_demo.mp4
-│   ├── forklift_demo_thumbnail.png
-│   ├── forklift_demo2.mp4
-│   ├── forklift_demo2_thumbnail.png
-│   ├── ros_outside_view.png
-│   └── ... other images/GIFs
-├── README.md
-└── ... (other private or internal code not shared publicly)
