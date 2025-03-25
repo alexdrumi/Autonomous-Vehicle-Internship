@@ -1,16 +1,17 @@
 <a id="readme-top"></a>
 
 <br />
-<div align="left">
+<div align="center">
   <a href="https://github.com/alexdrumi/Autonomous-Vehicle-Internship">
-    <img src="assets/mne_eeg.jpg" alt="MNE EEG Logo" width="550" height="300">
+    <img src="assets/teleann_robot.jpg" alt="Teleann logo" width="600" height="420">
   </a>
 <h1 align="center">AUTONOMOUS-VEHICLE-INTERNSHIP</h1>
-
+</div>
 
 ---
 
 ## Introduction
+<div align="left">
 
 **TELEANN** works on an **Autonomous Forklift** — a cutting-edge solution designed to revolutionize the warehouse environment by automating the movement of items between various points. This system enhances efficiency, reduces costs, and minimizes human error. The forklifts are retrofitted with our hardware and software kit, making it compatible with all types of existing forklifts.
 
@@ -60,12 +61,10 @@ Demonstration materials—images, GIFs are found in the **`assets/`** folder.
    *A screenshot showing the autonomous vehicle on the fifth anniversary of Codam Coding College.*
 
 2. **Video Demo (45 seconds)**  
-   [![Autonomous Forklift Demo](assets/Teleann_demo_compressed.gif)]
+   ![Autonomous Forklift Demo](assets/Teleann_demo_compressed.gif)
    - **Sound**: Commentary on forklift’s real-time object detection.  
    - **Split-screen**: Top/left is ROS view; bottom/right is the forklift moving in a warehouse setting.  
    - **Delay Notice**: The visible lag is strictly a **display refresh** artifact, not a ROS system delay.
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
----
+</div>
