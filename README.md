@@ -27,7 +27,7 @@ In the context of this internship project, my focus was on **real-time object de
 
 
 
-For the software developement we used C++ and python extensively as they are the main language in which ROS operates. **Notably, TELEANN has recently raised over €200,000 to continue developing this solution using the same core software stack. At the end of the internship, I was offered a full-time contract.** 
+For the software developement we used C++ and python extensively as they are the main language in which ROS operates. **Notably, TELEANN has recently raised a significant amount of funds to continue developing this solution using the same core software stack. At the end of the internship, I was offered a full-time contract.** 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
